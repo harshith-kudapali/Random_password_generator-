@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PasswordGen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="Box">
+        <h1 class="topic">Password Genrator</h1>
+        <p class="underline"></p>
+        <section id="inbox">
+            <div class="Password" id="Password">00</div>
+            <input id="bar" type="range" min="0" max="40" value="1">
+            <div id="Length">PasswordLength</div>
+            <div id="count">0</div>
+            <div class="checkbox">
+                <div id="lo">Include Lowercase Letter (a-z)
+                    <label class="container1"><input type="checkbox" id="loBtn"></label>
+                </div>
+                <div id="up">Include Uppercase Letter (A-Z)
+                    <label class="container2"><input type="checkbox" id="upBtn"></label>
+                </div>
+                <div id="num">Include Numbers (0-9)
+                    <label class="container3">
+                        <input type="checkbox" id="numBtn">
+                    </label>
+                </div>
+                <div id="sym">Include Symbols (@,-,*)
+                    <label class="container4">
+                        <input type="checkbox" id="symBtn">
+                    </label>
+                </div>
+            </div>
+            <div class="buttonholder">
+                <button id="gen">Genrate Password</button>
+            </div>
+        </section>
+    </section>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
